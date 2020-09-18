@@ -33,6 +33,7 @@
     "ios",
     "index.js",
     "index.d.ts",
-    "react-native-static-server.podspec"
+    "react-native-static-server.podspec",
+    "test.txt"
   ]
 }
