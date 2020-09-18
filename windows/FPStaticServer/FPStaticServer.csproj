@@ -110,7 +110,13 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <EmbeddedResource Include="Properties\FPStaticServer.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(ReactNativeWindowsDir)\Microsoft.ReactNative\Microsoft.ReactNative.vcxproj">
+      <Project>{f7d32bd0-2749-483e-9a0d-1635ef7e3136}</Project>
+      <Name>Microsoft.ReactNative</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
@@ -119,13 +125,6 @@
     <PackageReference Include="Restup">
       <Version>1.0.0</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="$(ReactNativeWindowsDir)\Microsoft.ReactNative\Microsoft.ReactNative.vcxproj">
-      <Project>{f7d32bd0-2749-483e-9a0d-1635ef7e3136}</Project>
-      <Name>Microsoft.ReactNative</Name>
-      <Private>False</Private>
-    </ProjectReference>
   </ItemGroup>
   <ItemDefinitionGroup>
     <Reference>
