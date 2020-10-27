@@ -107,9 +107,8 @@
   <ItemGroup>
     <Compile Include="FPStaticServerModule.cs" />
     <Compile Include="ReactPackageProvider.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\FPStaticServer.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(ReactNativeWindowsDir)\Microsoft.ReactNative\Microsoft.ReactNative.vcxproj">
